@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#"
+     xml:base="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues">
+        <rdfs:comment>Ontologia sobre o futebol portugues</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#associacao_tem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#associacao_tem">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#divisao_pertence"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Associacao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato_pertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato_pertence">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#divisao_tem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato_tem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato_tem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#divisao_pertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#divisao_pertence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Associacao"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#divisao_tem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#divisao_tem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_pertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_pertence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Serie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tec_pertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tec_pertence">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tem_et"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tem_et -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tem_et">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador_pertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador_pertence">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_jogador"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel_pertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel_pertence">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#temPlantel"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#presidente_pertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#presidente_pertence">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_Presidente"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Presidente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#serie_pertence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#serie_pertence">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#serie_tem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#serie_tem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Serie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#temPlantel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#temPlantel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_Presidente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_Presidente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Presidente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_jogador -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_jogador">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_treinador -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_treinador">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#treinador_pertence_et"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Treinador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#treinador_pertence_et -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#treinador_pertence_et">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Treinador"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Associacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Associacao">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#associacao_tem"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato_tem"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato_tem"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Serie"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato_pertence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#divisao_pertence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Associacao"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#divisao_tem"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tem_et"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#temPlantel"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_Presidente"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Presidente"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_pertence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_pertence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Serie"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tec_pertence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_treinador"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Treinador"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador_pertence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel_pertence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#tem_jogador"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Presidente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Presidente">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#presidente_pertence"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Serie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Serie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#serie_pertence"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#serie_tem"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Treinador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Treinador">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#treinador_pertence_et"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+
