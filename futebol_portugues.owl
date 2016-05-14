@@ -197,6 +197,71 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#altura_jogador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#altura_jogador"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#ano_fundacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#ano_fundacao"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#idade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#idade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#nacionalidade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#nacionalidade"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#nome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#numero_jogador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#numero_jogador"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#peso_jogador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#peso_jogador"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#pontos_equipa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#pontos_equipa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#posicao_jogador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#posicao_jogador"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -406,6 +471,643 @@
             </owl:Restriction>
         </owl:equivalentClass>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+        <campeonato_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#primeira_divisao"/>
+        <campeonato_tem rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa1"/>
+        <nome>Liga NOS</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+        <campeonato_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#primeira_divisao"/>
+        <nome>LEDMAN LigaPro</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Campeonato"/>
+        <campeonato_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#segunda_divisao"/>
+        <nome>Campeoanto Nacional de Seniores</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+        <equipa_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato1"/>
+        <ano_fundacao rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1904</ano_fundacao>
+        <nome>Sport Lisboa Benfica</nome>
+        <pontos_equipa rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</pontos_equipa>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa"/>
+        <equipa_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#campeonato1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tecnica1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tecnica1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica"/>
+        <equipa_tec_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa1"/>
+        <nome>Equipa Técnica SLB</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tecnica2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tecnica2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Equipa_Tecnica"/>
+        <equipa_tec_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa2"/>
+        <nome>Equipa Técnica SCP</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">188</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</idade>
+        <nacionalidade>Brasil</nacionalidade>
+        <nome>Ederson Santana de Moraes</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</peso_jogador>
+        <posicao_jogador>Guarda-Redes</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">192</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</idade>
+        <nacionalidade>Brasil</nacionalidade>
+        <nome>Jardel Nivaldo Vieira</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">88</peso_jogador>
+        <posicao_jogador>Defesa-Central</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">186</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>André Gomes Magalhães de Almeida</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</peso_jogador>
+        <posicao_jogador>Defesa-Direito/Médio-Defensivo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">177</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Nélson Cabral Semedo</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</peso_jogador>
+        <posicao_jogador>Defesa-Direito/Médio-Direito</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">185</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</idade>
+        <nacionalidade>Servia</nacionalidade>
+        <nome>Ljubomir Fejsa</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">81</peso_jogador>
+        <posicao_jogador>Médio-Defensivo/Defesa-Central</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">189</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</idade>
+        <nacionalidade>Grécia</nacionalidade>
+        <nome>Andreas Samaris</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</peso_jogador>
+        <posicao_jogador>Médio-Defensivo/Defesa-Central</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">173</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</idade>
+        <nacionalidade>Argentina</nacionalidade>
+        <nome>Osvaldo Fabián Nicolás Gaitán</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</peso_jogador>
+        <posicao_jogador>Médio-Esquerdo/Médio-Ofensivo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">173</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</idade>
+        <nacionalidade>Argentina</nacionalidade>
+        <nome>Eduardo Antonio Salvio</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</peso_jogador>
+        <posicao_jogador>Extremo-Direito/Extremo-Esquerdo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">179</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Gonçalo Manuel Ganchinho Guedes</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73</peso_jogador>
+        <posicao_jogador>Extremo-Direito/Extremo-Esquerdo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">179</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Luís Miguel Afonso Fernandes</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</peso_jogador>
+        <posicao_jogador>Médio-Direito/Médio-Ofensivo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</idade>
+        <nacionalidade>Marrocos</nacionalidade>
+        <nome>Adel Taarabt</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</peso_jogador>
+        <posicao_jogador>Médio-Ofensivo/Extremo-Esquerdo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</idade>
+        <nacionalidade>Brasil</nacionalidade>
+        <nome>Júlio César Soares de Espíndola</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</peso_jogador>
+        <posicao_jogador>Guarda-Redes</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">188</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22</idade>
+        <nacionalidade>Brasil</nacionalidade>
+        <nome>Anderson Souza Conceição</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">76</peso_jogador>
+        <posicao_jogador>Médio-Ofensivo/Extremo-Direito</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">179</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</idade>
+        <nacionalidade>Marrocos</nacionalidade>
+        <nome>Mehdi Carcela-González</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">39</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</peso_jogador>
+        <posicao_jogador>Extremo-Esquerdo/Extremo-Direito</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">176</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Renato Júnior Luz Sanches</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</peso_jogador>
+        <posicao_jogador>Médio-Centro/Médio-Ofensivo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</idade>
+        <nacionalidade>México</nacionalidade>
+        <nome>Raúl Alonso Jiménez Rodríguez</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</peso_jogador>
+        <posicao_jogador>Ponta-de-Lança</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">188</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</idade>
+        <nacionalidade>Grécia</nacionalidade>
+        <nome>Konstantinos Mitroglou</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">86</peso_jogador>
+        <posicao_jogador>Ponta-de-Lança</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">181</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</idade>
+        <nacionalidade>Brasil</nacionalidade>
+        <nome>Jonas Gonçalves Oliveira</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">74</peso_jogador>
+        <posicao_jogador>Ponta-de-Lança</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">181</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</idade>
+        <nacionalidade>Sérvia</nacionalidade>
+        <nome>Luka Jović</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</peso_jogador>
+        <posicao_jogador>Ponta-de-Lança</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa2"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">190</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Rui Pedro dos Santos Patrício</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</peso_jogador>
+        <posicao_jogador>Guarda-Redes</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa2"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">191</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</idade>
+        <nacionalidade>Eslovénia</nacionalidade>
+        <nome>Ažbe Jug</nome>
+        <numero_jogador>Desconhecido</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85</peso_jogador>
+        <posicao_jogador>Guarda-Redes</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">184</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">37</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Paulo Jorge Pedro Lopes</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</peso_jogador>
+        <posicao_jogador>Guarda-Redes</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</idade>
+        <nacionalidade>Argentina</nacionalidade>
+        <nome>Lisandro Ezequiel López</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</peso_jogador>
+        <posicao_jogador>Defesa-Central</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">170</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</idade>
+        <nacionalidade>Espanha</nacionalidade>
+        <nome>Alejandro Grimaldo García</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</peso_jogador>
+        <posicao_jogador>Defesa-Esquerdo/Médio-Esquerdo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">193</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</idade>
+        <nacionalidade>Brasil</nacionalidade>
+        <nome>Ânderson Luís da Silva</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</peso_jogador>
+        <posicao_jogador>Defesa-Central</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">187</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21</idade>
+        <nacionalidade>Suécia</nacionalidade>
+        <nome>Victor Jorgen Nilsson Lindelöf</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</peso_jogador>
+        <posicao_jogador>Defesa-Central/Defesa-Direito</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">175</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Eliseu Pereira dos Santos</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</peso_jogador>
+        <posicao_jogador>Defesa-Esquerdo/Médio-Esquerdo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#jogador9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Jogador"/>
+        <jogador_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1"/>
+        <altura_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">178</altura_jogador>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Sílvio Manuel Azevedo Ferreira Sá Pereira</nome>
+        <numero_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</numero_jogador>
+        <peso_jogador rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">72</peso_jogador>
+        <posicao_jogador>Defesa-Direito/Defesa-Esquerdo</posicao_jogador>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#lpfp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#lpfp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Associacao"/>
+        <nome>Liga Portuguesa de Futebol Profissional</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel"/>
+        <plantel_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa1"/>
+        <nome>Plantel SLB</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#plantel2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Plantel"/>
+        <plantel_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa2"/>
+        <nome>Plantel SCP</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#presidente1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#presidente1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Presidente"/>
+        <presidente_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa1"/>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">66</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Luis Filipe Vieira</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#presidente2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#presidente2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Presidente"/>
+        <presidente_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa2"/>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Bruno Miguel Azevedo Gaspar de Carvalho</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#primeira_divisao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#primeira_divisao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+        <divisao_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#lpfp"/>
+        <nome>1ª Divisão</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#segunda_divisao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#segunda_divisao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+        <divisao_pertence rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#lpfp"/>
+        <nome>2ª Divisão</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#terceira_divisao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#terceira_divisao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Divisao"/>
+        <nome>Distritais</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#treinador1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#treinador1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Treinador"/>
+        <treinador_pertence_et rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tecnica1"/>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">46</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Rui Vitória</nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#treinador2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#treinador2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#Treinador"/>
+        <treinador_pertence_et rdf:resource="http://www.semanticweb.org/sergiocaldas/ontologies/2016/4/futebol_portugues#equipa_tecnica2"/>
+        <idade rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61</idade>
+        <nacionalidade>Portugal</nacionalidade>
+        <nome>Jorge Fernando Pinheiro de Jesus</nome>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
