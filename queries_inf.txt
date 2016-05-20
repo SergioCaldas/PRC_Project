@@ -1,6 +1,6 @@
 --------------------------------------
 ---------					   -------
----------	     Queries	   -------
+---------	   Queries Inf	   -------
 ---------					   -------	
 --------------------------------------
 
@@ -25,6 +25,7 @@ SELECT (COUNT(?equipa) AS ?nEquipas)
 
 3-) Total Jogadores
 
+
 SELECT (COUNT(?x) AS ?nJogadores)
 		WHERE {
 			?x rdf:type fp:Jogador.
@@ -32,27 +33,21 @@ SELECT (COUNT(?x) AS ?nJogadores)
 
 4-) Ver info completa equipas da liga NOS
 
-SELECT DISTINCT ?nome_camp ?nome_equipa ?ano_fundacao ?nome_presidente ?nome_treinador ?p ?nome_plantel
+SELECT  ?nome_camp ?nome_equipa ?ano_fundacao ?nome_presidente ?nome_treinador ?p ?nome_plantel
 		WHERE {
 			?x rdf:type fp:Equipa.
-			?e rdf:type fp:Presidente.
-			?et rdf:type fp:Equipa_Tecnica.
-			?c rdf:type fp:Campeonato.
-			?t rdf:type fp:Treinador.
-			?p rdf:type fp:Plantel.
 			?x fp:equipa_pertence ?camp.
 			?camp fp:nome ?nome_camp.
 			?x fp:nome ?nome_equipa.
-            ?x fp:ano_fundacao ?ano_fundacao.
-			?e fp:presidente_pertence ?x.
-			?e fp:nome ?nome_presidente.
-			?et fp:equipa_tec_pertence ?x.
-			?t fp:treinador_pertence_et ?et.
-			?t fp:nome ?nome_treinador.
-			?p fp:plantel_pertence ?x.
+			?x fp:ano_fundacao ?ano_fundacao.
+			?x fp:tem_Presidente ?presidente.
+			?presidente fp:nome ?nome_presidente.
+			?x fp:equipa_tem_et ?et.
+			?et fp:tem_treinador ?treinador.
+			?treinador fp:nome ?nome_treinador.
+			?x fp:temPlantel ?p.
 			?p fp:nome ?nome_plantel.
 		}
-ORDER BY ASC(?ano_fundacao)
 
 5-) Ver Info Presidentes de Cada Equipa
 
@@ -67,7 +62,7 @@ SELECT ?nome_presidente ?idade ?pais ?nome_equipa
 		}
 ORDER BY DESC(?idade)
 
-6-) Ver Info Treinador de Cada Equipa
+6-)Ver Info Treinador de Cada Equipa
 
 SELECT ?nome_treinador ?idade ?pais ?nome_et
 		WHERE {
@@ -80,24 +75,23 @@ SELECT ?nome_treinador ?idade ?pais ?nome_et
 		}
 ORDER BY DESC(?idade)
 
-7-) Média de Idade Peso Altura Jogadores por equipa
+7-)Média de Idade Peso Altura Jogadores por equipa
 
 SELECT ?nome_equipa (AVG(?idade) AS ?media_idade) (AVG(?peso) AS ?media_peso) (AVG(?altura) AS ?media_altura)
 		WHERE {
 			?x rdf:type fp:Equipa.
 			?x fp:nome ?nome_equipa.
-			?p rdf:type fp:Plantel.
-			?j rdf:type fp:Jogador.
-			?p fp:plantel_pertence ?x.
-			?j fp:jogador_pertence ?p.
-			?j fp:peso_jogador ?peso.
+			?x fp:temPlantel ?p.
+			?p fp:tem_jogador ?j.
+			?j fp:idade ?idade.
 			?j fp:altura_jogador ?altura.
-			?j fp:idade ?idade.					
+			?j fp:peso_jogador ?peso.				
 }
 GROUP BY ?nome_equipa
 ORDER BY ASC(?media_idade)
 
 8-) Contar Jogadores Por paises
+
 SELECT ?pais (COUNT(?x) AS ?t_jogadores)
 		WHERE {
 			?x rdf:type fp:Jogador.
@@ -106,8 +100,8 @@ SELECT ?pais (COUNT(?x) AS ?t_jogadores)
 GROUP BY ?pais
 ORDER BY DESC(?t_jogadores)
 
-
 9-) Classificação Liga NOS
+
 
 SELECT ?nome_equipa ?pontos
 		WHERE {
@@ -119,4 +113,3 @@ SELECT ?nome_equipa ?pontos
 			?equipa fp:pontos_equipa ?pontos.
 		}
 ORDER BY DESC(?pontos)
-
