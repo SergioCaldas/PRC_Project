@@ -1,0 +1,25 @@
+--------------------------------------
+---------					   -------
+---------	     Queries	   -------
+---------					   -------	
+--------------------------------------
+
+1-) Triplos
+
+SELECT (COUNT(?s) AS ?ntriplos)
+	WHERE {
+		?s ?p ?o.
+	}
+
+2-) Classificação Liga NOS
+
+SELECT ?nome_equipa ?pontos
+		WHERE {
+			?x rdf:type fp:Campeonato.
+			?x fp:nome ?nome_campeonato.
+			FILTER(regex(str(?nome_campeonato),"Liga NOS","i"))
+			?x fp:campeonato_tem ?equipa.
+			?equipa fp:nome ?nome_equipa.
+			?equipa fp:pontos_equipa ?pontos.
+		}
+ORDER BY DESC(?pontos)
