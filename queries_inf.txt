@@ -90,7 +90,26 @@ SELECT ?nome_equipa (AVG(?idade) AS ?media_idade) (AVG(?peso) AS ?media_peso) (A
 GROUP BY ?nome_equipa
 ORDER BY ASC(?media_idade)
 
-8-) Contar Jogadores Por paises
+8-) Informação completa do plantel de uma dada equipa
+
+SELECT ?numero ?posicao ?nome_jogador ?idade ?pais ?altura ?peso
+		WHERE {
+			?x rdf:type fp:Equipa.
+			?x fp:nome ?nome_equipa.
+			FILTER(regex(str(?nome_equipa),"Futebol Clube do Porto","i"))
+			?x fp:temPlantel ?p.
+			?p fp:tem_jogador ?j.
+			?j fp:numero_jogador ?numero.
+			?j fp:posicao_jogador ?posicao.
+			?j fp:nome ?nome_jogador.
+			?j fp:idade ?idade.
+			?j fp:nacionalidade ?pais.
+			?j fp:altura_jogador ?altura.
+			?j fp:peso_jogador ?peso.				
+}
+ORDER BY ASC(?numero)
+
+9-) Contar Jogadores Por paises
 
 SELECT ?pais (COUNT(?x) AS ?t_jogadores)
 		WHERE {
@@ -100,7 +119,7 @@ SELECT ?pais (COUNT(?x) AS ?t_jogadores)
 GROUP BY ?pais
 ORDER BY DESC(?t_jogadores)
 
-9-) Classificação Liga NOS
+10-) Classificação Liga NOS
 
 
 SELECT ?nome_equipa ?pontos
